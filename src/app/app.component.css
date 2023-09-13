@@ -1,0 +1,22 @@
+label {
+  color: aliceblue;
+}
+
+h1 {
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.values-and-errors {
+  margin-top: 5rem;
+  letter-spacing: 2px;
+  color: pink;
+  background-color: blueviolet;
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.values-and-errors h3 {
+  text-decoration: underline;
+}
