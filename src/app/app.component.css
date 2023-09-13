@@ -20,3 +20,34 @@ h1 {
 .values-and-errors h3 {
   text-decoration: underline;
 }
+
+.valid-email {
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+}
+
+.image-div {
+  display: relative;
+  padding-top: 3rem;
+}
+
+#email-image {
+  position: absolute;
+  width: 25%;
+  animation: roll 10s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes roll {
+  0% {
+    left: -120px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 120%;
+    transform: rotate(1440deg);
+  }
+}

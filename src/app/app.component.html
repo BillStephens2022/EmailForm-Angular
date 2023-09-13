@@ -1,4 +1,6 @@
+
 <h1 class="has-text-centered is-size-1">Email Validation Form</h1>
+
 <div class="container">
   <form (ngSubmit)="onSubmit()" #emailForm="ngForm">
     <div class="field">
@@ -40,4 +42,15 @@
   <div>
     Email validation errors: {{ emailForm.controls["email"]["errors"] | json }}
   </div>
+  
 </div>
+
+<div class="container has-background-danger valid-email" *ngIf="emailForm.valid">
+  <h3 class="is-size-3">Your email is: {{ email }}</h3>
+</div>
+
+<div class="container image-div">
+  <img id="email-image" src="../assets/images/email.png" />
+</div>
+
+
